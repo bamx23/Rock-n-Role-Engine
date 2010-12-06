@@ -1,0 +1,16 @@
+body
+{
+    background-color: #151424;
+    color: #c8c8d8;
+    font-family: arial, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.reg_err
+{
+    border: 2px solid #cc3300;
+}
+err
+{
+    color: #cc3300;
+}
