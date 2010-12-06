@@ -53,7 +53,8 @@ if($_POST['do_reg'])
             <pre>Имя:           <input id="reg_name" type="text"/>  <err id = "reg_name_err"></err><br /></pre>
             <pre>Фамилия:       <input id="reg_sname" type="text"/>  <err id = "reg_sname_err"></err><br /></pre>
             <pre>E-mail:        <input id="reg_email" type="text"/>  <err id = "reg_email_err"></err><br /></pre>
-            <pre>Телефон:       <input id="reg_phone" type="password"/>  <err id = "reg_phone_err"></err><br /></pre>
+            <pre>Телефон:       <input id="reg_phone" type="text"/>  <err id = "reg_phone_err"></err><br /></pre>
+            <pre>Введите код c картинки:<br /><input id="reg_capcha" type="text"/> <? include("core/captcha.php") ?></pre>
             <input id="reg_button" type="submit" value="Регистрация"/><input type="reset" value="Отчистить"/>
             </form>
         </div>

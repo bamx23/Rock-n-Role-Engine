@@ -12,7 +12,7 @@ $("#reg_login").change(function(){
             $("#reg_login").removeClass('reg_err');
             $("#reg_login_err").html("");
         }
-        var re = /(\s|^[^a-zA-Z].*|[^a-zA-z0-9_-]|.*[^a-zA-Z]$)/;
+        var re = /(\s|^[^a-zA-Z].*|[^a-zA-z0-9_-]|.*[^a-zA-Z0-9]$)/;
         if(re.test($(this).attr('value')))
         {
             $("#reg_login").addClass('reg_err');
@@ -80,7 +80,9 @@ $("#reg_pass_re").change(function (){
 })
 
 $("#reg_button").click(function(){
-    if(!$("#reg_name").val() || !$("#reg_sname").val() || !$("#reg_phone").val() || !$("#reg_email").val() || !$("#reg_login").val() || !$("#reg_pass").val() || !$("#reg_pass_re").val())
+    if(!$("#reg_name").val() || !$("#reg_sname").val() || !$("#reg_phone").val() 
+    || !$("#reg_email").val() || !$("#reg_login").val() || !$("#reg_pass").val() 
+    || !$("#reg_pass_re").val() || !$("#reg_capcha").val())
     {
         $('#dialog').attr("title", "Ошибка")
                     .html("<p>Вы ввели не все данные</p>")
