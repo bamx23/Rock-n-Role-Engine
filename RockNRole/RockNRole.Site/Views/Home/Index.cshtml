@@ -1,0 +1,56 @@
+﻿@model RockNRole.Site.Models.LogOnModel
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+}
+@section news
+{
+    <ul>
+        <li>
+            <p>Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. </p>
+            <p class="news-time">18.08.2013</p>
+        </li>
+        <li>
+            <p>Another text over here</p>
+            <p class="news-time">18.08.2013</p>
+        </li>
+        <li>
+            <p>Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. </p>
+            <p class="news-time">18.08.2013</p>
+        </li>
+        <li>
+            <p>Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. </p>
+            <p class="news-time">18.08.2013</p>
+        </li>
+        <li>
+            <p>Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. </p>
+            <p class="news-time">18.08.2013</p>
+        </li>
+        <li>
+            <p>Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. Some text over here. </p>
+            <p class="news-time">18.08.2013</p>
+        </li>
+    </ul>
+}
+@section Banner468_60
+{
+    Здесь может быть ваша реклама (468x60)
+}
+
+<div id="login-form">
+    @using(Html.BeginForm())
+    {
+        <h2>Sign in</h2>
+        <div class="text-with-label">
+            @Html.TextBoxFor(m => m.UserName, new {required = "required"})
+            <span class="holder">Login</span>
+        </div>
+        <div class="text-with-label">
+            @Html.PasswordFor(m => m.Password, new {required = "required"})
+            <span class="holder">Password</span>
+        </div>
+        @Html.CheckBoxFor(m => m.RememberMe, new { value = "remember me" }) <br/>
+        <input type="submit" value="Login"/>
+    }
+    or @Html.ActionLink("Sign up", "Register", "Account")
+</div>

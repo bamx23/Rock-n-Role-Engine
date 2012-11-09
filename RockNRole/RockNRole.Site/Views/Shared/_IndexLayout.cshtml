@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/IndexStyle.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.8.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div class="page">
+        <section id="news">
+            <h2>News</h2>
+            <div class="news-list">
+                @RenderSection("news", false)    
+            </div>
+        </section>
+        <div class="center">
+            <h1>ROCK'n'ROLE</h1>
+            <section id="main">
+                @RenderBody()
+            </section>
+            <section id="index-banner">
+                @RenderSection("Banner468_60", false)
+            </section>    
+        </div>
+        <footer>
+            @Html.ActionLink("About us", "About", "Home") 
+            <a href="#">Help</a>
+            <a href="#">Contacts</a>
+            <br/>
+            © Copyright 2012 Volosatov Nikolay
+        </footer>
+    </div>
+</body>
+</html>

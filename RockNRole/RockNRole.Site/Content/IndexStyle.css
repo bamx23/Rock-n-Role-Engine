@@ -1,0 +1,148 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    background-color: #6334E3;
+    color: white;
+    
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    
+    padding: 20px;
+    margin-top: 20px;
+    
+    border-radius: 10px;
+}
+
+.center {
+    padding-left: 320px;
+}
+
+#news {
+    float: left;
+    height: 100%;
+    width: 300px;
+    margin-top: 30px;
+}
+
+#news h2 {
+    padding: 5px;
+}
+
+.news-list 
+{
+    height: 380px;
+    background-color: #A8C6FA;
+    padding: 10px;
+    overflow: auto;
+}
+
+.news-list ul {
+    list-style: none;
+    color: #033076;
+}
+
+.news-list li {    
+    border-bottom: 2px solid #0844A4;
+    padding: 5px 0;
+}
+.news-list li:last-child {
+    border-bottom: none;
+}
+
+.news-list p.news-time {
+    text-align: right;
+    color: gray;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+#main {
+    height: 345px;
+    margin: auto;
+}
+
+#login-form {
+    padding-top: 80px;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+#login-form form {
+    background-color: #A8C6FA;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+#login-form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+#login-form form input[type="submit"] {
+    padding: 2px 45px;
+    margin-left: 15px;
+}
+
+footer {
+    color: #DCDCDC;
+    margin-top: 10px;
+    text-align: center;
+    width: 70%;
+    position: absolute;
+}
+footer a {
+    color: #DCDCDC;
+    padding-right: 5px;
+    padding-left: 2px;
+    border-right: 2px solid #DCDCDC;
+}
+footer a:last-of-type {
+    border-right: none;
+}
+
+#index-banner 
+{
+    margin: auto;
+    width: 468px;
+    height: 60px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: lightblue;
+}
+
+.text-with-label {
+    padding: 2px;
+    overflow: visible;
+}
+.text-with-label input {
+    position: absolute;
+}
+.text-with-label .holder 
+{
+    position:relative;
+    left: 2px;
+    z-index: 1;
+    height: 20px;
+    padding: 4px;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #999;
+}
+.text-with-label input:focus:valid+.holder, .text-with-label input:valid+.holder {
+    visibility: hidden;
+}
